@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<title>W3.CSS Template</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="stylesheet" href="./../w3.css">
+
+	<body>		
+		<!-- Header -->
+		<header class="w3-display-container w3-content w3-center" style="max-width:1000px">
+			<img class="w3-image" src="../images/header-image2.png" alt="Me" width="1000">
+			<div class="w3-display-middle w3-padding-large w3-wide w3-text-black w3-center">
+				<h2 class="w3-hide-medium w3-hide-small" style="font-family: Fantasy">Mario A. Cerón-Romero</h2>
+				<h5 class="w3-hide-large" style="white-space:nowrap">Mario A. Cerón-Romero</h5>
+				<h6 class="w3-hide-medium w3-hide-small" style="font-family: cursive">Genome evolution in different ecological contexts<br></h6>
+
+			</div>
+			
+			<!-- Navbar (placed at the bottom of the header image) -->
+			<div class="w3-bar w3-round w3-display-bottom w3-hide-small" style="bottom:-10px">
+				<a href="../index.html" class="w3-bar-item w3-button w3-light-grey w3-border w3-round">Home</a>
+				<a href="./research.html" class="w3-bar-item w3-button w3-light-grey w3-border w3-round">Research interests</a>
+				<a href="./publications.html" class="w3-bar-item w3-button w3-light-grey w3-border w3-round">Publications</a>
+				<a href="#contact" class="w3-bar-item w3-button w3-light-grey w3-border w3-round">Contact</a>
+				<a href="https://github.com/marioalbertocer" target="_blank" class="w3-bar-item w3-button w3-light-grey w3-border w3-round">Repositories</a>
+			</div>
+		</header>
+		
+		<!-- Navbar on small screens -->
+		
+		<div class="w3-bar w3-light-grey w3-hide-large w3-hide-medium">
+			<a href="../index.html" class="w3-bar-item w3-button w3-border w3-round w3-mobile">Home</a>
+			<a href="./research.html" class="w3-bar-item w3-button w3-border w3-round w3-mobile">Research interests</a>
+			<a href="./publications.html" class="w3-bar-item w3-button w3-border w3-round w3-mobile">Publications</a>
+			<a href="#contact" class="w3-bar-item w3-button w3-border w3-round w3-mobile">Contact</a>
+			<a href="https://github.com/marioalbertocer" target="_blank" class="w3-bar-item w3-button w3-border w3-round w3-mobile">Repositories</a>
+		</div>
+		
+		<!-- Page content -->
+		<div class="w3-content w3-padding-large w3-padding-small" id="general">			
+			<div class="w3-light-grey w3-padding-large w3-margin-top" id="pcm">
+				<h3 class="w3-center w3-grey w3-round">Changes in genome architecture associated with gene family evolution</h3>
+				<p align="justify"> Most of our knowledge on the occurrence and fate of gene duplicates (paralogues) comes from studies of whole genome duplications in plants, animals, fungi, and a few model organisms from other clades. The more we know about protists, the more we realize the complexity of the genome architecture and its importance for the evolution of gene families. I became interested in this topic after developing a tool (PhyloChromoMap) to map the phylogenetic history of genes in eukaryotic chromosomes (<a href="https://doi.org/10.1093/gbe/evy017" target="_blank" style="color: blue">Cerón-Romero et al. 2018</a>). Using this tool, I displayed the extent of the ectopic recombination that <i>P. falciparum</i> experiences in its subtelomeres to generate diversity in antigenic gene families. Later, I supervised an exceptional undergraduate student in a project recently submitted for publication (<a href="https://doi.org/10.1101/2023.02.27.530335" target="_blank" style="color: blue">Martínez-Eraso, et al. 2023</a>) in which she explores the importance and evolution of this mechanism through the whole Plasmodium genus. I am interested in expanding this type of exploration to understand antigenic gene family evolution in other protists parasites (e.g., other Apicomplexans and Excavates) and karyotype evolution in other lineages including plants and fungi.</p>
+				<div class="w3-container; w3-center">
+					<img src="./../images/research-overview/pcm.png" alt="pcm-img" class="w3-image; w3-border" width="600">
+				</div>
+				<p align="justify">Examples of phylogenomic chromosome mapping in four species of <i>Plasmodium</i>. This approach maps the phylogenetic history of genes into the chromosomes resulting in a "profile" of gene conservation that allows the detection of young regions. The large subtelomeric young regions with a high density of antigenic genes (lines below the bars/chromosomes) are signatures of frequent (ectopic) subtelomeric recombination to generate antigenic diversity. This process is more intense in <i>P. yoelii</i> and <i>P. falciparum</i> (<a href="https://doi.org/10.1101/2023.02.27.530335" target="_blank" style="color: blue">Martínez-Eraso, et al. 2023</a>).</p>
+			</div>
+			
+			<!-- Contact -->
+			<div class="w3-light-grey w3-padding-large w3-margin-top" id="contact">
+				<h3 class="w3-center w3-grey w3-round">Contact</h3>
+				<div class="w3-row-padding">
+					<div class="w3col w3-half">
+						<p style="text-align:left">
+							Department of Plant Biology<br>
+							Carl R. Woese Institute for Genomic Biology<br>
+							University of Illinois at Urbana – Champaign<br>
+							1206 W Gregory Dr, Urbana, IL 61801<br>
+							<a href="mailto:mceronromero@umass.edu">mceron [at] illinois [dot] edu</a>
+						</p>
+					</div>
+					
+					<div class="w3col w3-half">
+						<!-- <p style="font-family:verdana;" align="right">Follow me on:</p> -->
+						<p style="text-align:right">
+							<a href="http://www.researchgate.net/profile/Mario_Ceron_Romero" target="_blank"><img src="./../images/research-gate.png" alt="r-g" height="42" width="42"></a>
+							<a href="https://scholar.google.com/citations?user=qdTIsj8AAAAJ&hl=en&oi=ao" target="_blank"><img src="./../images/gscholar.png" alt="g-s" height="42" width="42"></a>
+							<a href="https://twitter.com/MACeronRomero" target="_blank"><img src="./../images/twitter_ic.png" alt="t-r" height="42" width="42"></a>
+						  <a href="https://orcid.org/0000-0003-1365-767X" target="_blank"><img src="./../images/orcid.png" alt="i-d" height="42" width="42"></a>
+					  </p>
+					</div>
+				</div>
+			</div>			
+		</div>
+		<div id="copyright">
+			<div class="w3-center">
+				<p style="font-size: 14px;">&copy; 2023. Mario A. Cerón-Romero</p>
+			</div>
+		</div>		
+	</body>
+</html>

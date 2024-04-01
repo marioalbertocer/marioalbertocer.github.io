@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<title>W3.CSS Template</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="stylesheet" href="./../w3.css">
+
+	<body>		
+		<!-- Header -->
+		<header class="w3-display-container w3-content w3-center" style="max-width:1000px">
+			<img class="w3-image" src="./../images/header-image.png" alt="Me" width="1000">
+			<div class="w3-display-middle w3-padding-large w3-wide w3-text-black w3-center">
+				<h2 class="w3-hide-medium w3-hide-small">Mario A. Cerón-Romero</h2>
+				<h5 class="w3-hide-large" style="white-space:nowrap">Mario A. Cerón-Romero</h5>
+				<h6 class="w3-hide-medium w3-hide-small">Ph.D. Candidate in Organismic and Evolutionary Biology<br></h6>
+				<h6 class="w3-hide-medium w3-hide-small">UMass-Amherst<br></h6>
+			</div>
+			
+			<!-- Navbar (placed at the bottom of the header image) -->
+			<div class="w3-bar w3-round w3-display-bottom w3-hide-small" style="bottom:-10px">
+				<a href="./../index.html" class="w3-bar-item w3-button w3-light-grey w3-border w3-round">Home</a>
+				<a href="#" class="w3-bar-item w3-button w3-light-grey w3-border w3-round">Research</a>
+				<!-- <a href="./cv.html" class="w3-bar-item w3-button w3-light-grey w3-border w3-round">CV</a> -->
+				<a href="./cv.html#publications" class="w3-bar-item w3-button w3-light-grey w3-border w3-round">Publications</a>
+				<!-- <a href="./../index.html#collaborations" class="w3-bar-item w3-button w3-light-grey w3-border w3-round">Collaborations</a> -->
+				<a href="./../index.html#contact" class="w3-bar-item w3-button w3-light-grey w3-border w3-round">Contact</a>
+				<a href="https://github.com/marioalbertocer" target="_blank" class="w3-bar-item w3-button w3-light-grey w3-border w3-round">Repositories</a>
+				<!-- <a href="http://thelegacyofdarwin.blogspot.com/" target="_blank" class="w3-bar-item w3-button w3-light-grey w3-border w3-round">Blog</a> -->
+			</div>
+		</header>
+		
+		<!-- Navbar on small screens -->
+		
+		<div class="w3-bar w3-light-grey w3-hide-large w3-hide-medium">
+			<a href="./../index.html" class="w3-bar-item w3-button w3-border w3-round w3-mobile">Home</a>
+			<a href="#" class="w3-bar-item w3-button w3-border w3-round w3-mobile">Research</a>
+			<!-- <a href="#cv" class="w3-bar-item w3-button w3-border w3-round w3-mobile">CV</a> -->
+			<a href="./publications.html" class="w3-bar-item w3-button w3-border w3-round w3-mobile">Publications</a>
+			<!-- <a href="./../index.html#collaborations" class="w3-bar-item w3-button w3-border w3-round w3-mobile">Collaborations</a> -->
+			<a href="./../index.html#contact" class="w3-bar-item w3-button w3-border w3-round w3-mobile">Contact</a>
+			<a href="https://github.com/marioalbertocer" target="_blank" class="w3-bar-item w3-button w3-border w3-round w3-mobile">Repositories</a>
+			<!-- <a href="http://thelegacyofdarwin.blogspot.com/" target="_blank" class="w3-bar-item w3-button w3-border w3-round w3-mobile">Blog</a> -->
+		</div>
+		
+		<!-- Page content -->
+		<div class="w3-content w3-padding-large w3-padding-small" id="general">
+			<ul>
+				<li><a href="#pcm">Phylogenomic Chromosome Mapping</a></li>
+				<li><a href="#plasmodium-karyo">Karyotype evolution in <i>Plasmodium falciparum</i></a></li>
+				<li><a href="#gene-duplications">Timing Gene Duplications/Losses Across the Eukaryotic Tree of Life</a></li>
+				<li><a href="#photosynthesis">Phylogenetic history of photosyntesis</a></li>
+				<li><a href="#other-">Phylogenetic history of photosyntesis</a></li>
+			</ul>
+			
+			<div class="w3-white w3-padding-large w3-margin-top" id="pcm">
+				<h3 class="w3-center w3-grey w3-round">Phylogenomic Chromosome Mapping</h3>
+				<p align="justify"> I have been working on developing a phylogenomic chromosome mapper (i.e., PhyloChromoMap)<sup><a href="https://doi.org/10.1093/gbe/evy017" target="_blank">1</a></sup>, and developing the third version of our phylogenomic pipeline (i.e., PhyloTOL). PhyloChromoMap is a tool that maps the evolutionary history of genes in chromosomes of eukaryotic organisms. PhyloTOL contains a collection of ~13000 homolog genes that include up to ~1000 lineages including bacteria, archaea and eukaryotes. I am currently working to deploy these methods to 1) infer the root of the eukaryotic tree of life and 2) integrate with PhyloChromoMap to depict the absolute strand polarity in Kinetoplastids.</p>
+				<img src="./../images/research-overview/pcm.png" alt="lab" class="w3-image" width="1000" height="500" style="border:5px solid black">
+				<p align="justify"><b>Figure 1. </b>Exemplar phylogenomic maps of chromosomes 1–3 of <i>Saccharomyces cerevisiae</i> S288C produced with PhyloTOL and PhyloChromoMap. Black lines represent chromosomes of <i>S. cerevisiae</i> S288C and bars above reflect levels of conservation. First row from the bottom (NIP, “not in pipeline”) indicates ORFs that do not match our criteria for tree building (i.e., likely Saccharomyces-specific or misannotated ORFs). The remaining rows (bottom to top) are heatmaps reflecting the proportion of lineages of Opisthokonta (Op), Amoebozoa (Am), Excavata (Ex), orphans (EE, “everything else”), Archaeplastida (Pl), SAR (Sr), Archaea (Ar), Bacteria (Ba) that contain the indicated gene<sup><a href="https://doi.org/10.1093/gbe/evy017" target="_blank">1</a></sup>.</p>
+			</div>
+
+			<div class="w3-white w3-padding-large w3-margin-top" id="plasmodium-karyo">
+				<h3 class="w3-center w3-grey w3-round">Karyotype evolution in <i>Plasmodium falciparum</i></h3>
+				<p align="justify"> We used PhyloChromoMap and our bioinformatic pipeline to generate a phylogenomic map of the chromosomes of <i>P. falciparum</i> strain 3D7. We estimated the level of conservation of 2116 genes along the chromosomes and identified ‘young’ regions (i.e. those with recent or fast evolving genes) that are enriched in subtelomeric regions as compared to internal regions. We also demonstrated that the patterns of molecular evolution for paralogous genes differ substantially depending on their location as younger paralogs tend to be found in subtelomeric regions and older paralogs in internal regions. Combining these observations with analyses of synteny we demonstrated that subtelomeric regions are actively shuffled among chromosome ends, which is consistent with the hypothesis that these regions are prone to ectopic recombination<sup><a href="https://doi.org/10.1016/S1369-5274(00)00227-7" target="_blank">2</a></sup>. We
+				demostrated (through comparing <i>dN/dS</i> ratios) that the distribution of paralogs from most gene families is guided by selection except in gene family <i>var</i>. The mechanism of karyotype evolution of <i>P. falciparum</i> that we study exemplifies that eukaryotic genomes are more dynamic than traditionally thought.</p>
+				<img src="./../images/research-overview/plasmodium.png" alt="lab" class="w3-image" width="1000" height="500" style="border:5px solid black">
+				<p align="justify"><b>Figure 2. </b>Paralogs in (a) subtelomeric regions of <i>Plasmodium falciparum</i> 3D7 tend to be young whereas paralogs in (b) internal regions tend to be old. The 14 chromosomes of <i>P. falciparum</i> are displayed as a circle with the red portions of each chromosome indicating subtelomeric regions. The lines within the circles link pairs of paralogs and the color indicates how many eukaryotic major clades (MC) contain those paralogs (i.e., older paralogs are more blue and younger paralogs are more green)<sup><a href="https://doi.org/10.1093/gbe/evy017" target="_blank">1</a></sup>.</p>
+			</div>
+			
+			<div class="w3-white w3-padding-large w3-margin-top" id="gene-duplications">
+				<h3 class="w3-center w3-grey w3-round">Timing Gene Duplications/Losses Across the Eukaryotic Tree of Life</h3>
+				<p align="justify"> Although gene duplications are important drivers of genome evolution and novelty<sup><a href="https://doi.org/10.1016/j.tig.2005.08.008" target="_blank">3</a>,<a href="http://www.ias.ac.in/article/fulltext/jgen/092/01/0155-0161" target="_blank">4</a></sup>, the dynamics of gains and losses of gene duplications through the evolutionary history of eukaryotes remains poorly understood. I am using PhyloTOL to compare the rates of gains and losses of ancient vs. recent gene duplications, and test at least two hypotheses: 1) rampant gene duplications occurred early in the history of eukaryotes followed by gradual loses, and 2) episodic gene duplications have been occurring during the history of the eukaryotes, followed by gradual losses. The finding of this project will contribute to understand the role of duplications in processes such evolution of gene families and speciation.</p>
+				<img src="./../images/research-overview/duplications.png" alt="lab" class="w3-image" width="1000" height="500" style="border:5px solid black">
+				<p align="justify"><b>Figure 3. </b>Hypotheses to test about origin and decay of gene duplications. On the left, rampant gene duplications (yellow star) occurred early in the history of eukaryotes followed by gradual losses. On the right, episodic gene duplications have been occurring during the history of the eukaryotes (yellow stars and numbers with different colors), followed by gradual losses. The graph illustrate both hypotheses using <i>Dynophysis</i> but the processes should be occuring in all lineajes independently.</p>
+			</div>
+			<div class="w3-white w3-padding-large w3-margin-top" id="photosynthesis">
+				<h3 class="w3-center w3-grey w3-round">Phylogenetic history of photosyntesis</h3>
+				<p align="justify">
+					The history of photosynthesis is linked to the acquisition of plastids. The popular view is that the ancestor of Archaeplastida acquired its plastid (i.e., primary plastid) from Cyanobacteria<sup><a href="https://doi.org/10.1098/RSTB.2009.0103" target="_blank">5</a></sup>. Consequently, archaeplastida lineages must be nested within Cyanobacteria in the phylogeny of all nuclear photosynthetic genes. However, some nuclear-encode photosynthetic genes reflect other origins within bacteria. This could be due to either poor resolution of single gene trees, interdomain lateral gene transfer or primary plastid acquisition by a “shopping bag” mechanism<sup><a href="https://doi.org/10.1016/j.tplants.2007.03.011" target="_blank">6</a>,<a href="https://doi.org/10.1098/RSTB.2008.0050" target="_blank">7</a></sup>. The shopping bag model argues that there were many transient endosymbionts that helped the establishment of the primary plastid<sup><a href="https://doi.org/10.1016/j.tplants.2007.03.011" target="_blank">6</a>,<a href="https://doi.org/10.1098/RSTB.2008.0050" target="_blank">7</a></sup>. Under this model, we expect archaeplastida lineages to be frequently nested within clades of different cyanobacterial lineajes or different bacterial lineajes. In order to tackle this goal, I am using PhyloTOL to test which of these mechanisms explains better the evolution of all nuclear photosynthetic genes in eukaryotes.
+				</p>
+				<img src="./../images/research-overview/photosynthesis.png" alt="lab" class="w3-image" width="1000" height="500" style="border:5px solid black">
+				<p align="justify"><b>Figure 4. </b>Hypotheses to test about the origin of photosynthetic nuclear genes from the primary plastid. A) Simple scenario: Genes came from a unique endosymbiotic event involving a cyanobacterial lineage and the ancestor of Archaeplastida. B) Shopping bag: Genes came from multiple endosymbiotic events involving multiple cyanobacterial lineajes and the ancestor of Archaeplastida. C) Shopping bag: Genes came from multiple endosymbiotic events involving multiple bacterial lineajes and the ancestor of Archaeplastida. The graphs on the left illustrate the hypotheses and the graph on the right illustrate our expectation on phylogenetic trees.</p>
+			</div>
+		</div>
+		<div id="copyright">
+			<div class="w3-center">
+				<p style="font-size: 14px;">&copy; 2018. Mario A. Cerón-Romero</p>
+			</div>
+		</div>		
+	</body>
+</html>
